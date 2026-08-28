@@ -1,0 +1,226 @@
+body {
+    background-color: rgb(229, 233, 222);
+    margin: 2rem;
+    overflow: hidden;
+}
+:root {
+    --gap: 0.5rem;
+    --height: 32rem;
+    --padding: 3rem;
+    --tagrotation: 15deg;
+    --widthleft: 50rem;
+    --widthright: 17rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-bottom: -2rem;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 3rem;
+    font-size: 1.2rem;
+}
+
+
+.wrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper, .wrapper div {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+.wrapperleft {
+    gap: var(--gap);
+    display: flex;
+    flex-direction: column;
+}
+
+#sweet {
+    background-color: rgb(244, 188, 100);
+    width: var(--widthleft);
+    height: calc(var(--height) + var(--gap));
+    padding: var(--padding);
+}
+
+#top-5 {
+    background-color: white;
+    width: var(--widthleft);
+    height: 50rem;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapperright {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap);
+    margin-left: var(--gap);
+}
+
+#school {
+    background-color: rgb(137, 190, 225);
+    width: var(--widthright);    
+    height: calc(var(--height) / 2);
+    padding: var(--padding);
+}
+
+#everyday {
+    background-color: rgb(238, 148, 87);
+    width: var(--widthright);
+    height: calc(var(--height) / 1.5 );
+    padding: var(--padding);
+}
+
+@font-face {
+    font-family: dynapuff;
+    src: url(/font/DynaPuff/DynaPuff-VariableFont_wdth\,wght.ttf);
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3rem;
+    text-align: center;
+    font-family: dynapuff;
+    font-size: 3rem;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#top-5h1 {
+    text-align: left;
+}
+
+#sweeth1 {
+    color: white;
+    overflow-wrap: break-word;
+    line-height: 12rem;
+    width: 50rem;
+    font-size: 13rem;
+    user-select: none;
+}
+
+#top-5text {
+    margin: 0;
+    border-radius: 0;
+    width: 10rem;
+    overflow-wrap: break-word;
+}
+
+#school img, #everyday img {
+    margin-top: 2rem;
+}
+
+#school h1, #everyday h1 {
+    line-height: 2rem;
+}
+
+img {
+    width: 15rem;
+    user-select: none;
+}
+
+#cookies {
+    position: absolute;
+    top: 10rem;
+    width: 18rem;
+}
+
+#sweetcookie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+#tag, #tag2 {
+    position: absolute;
+    top: 21rem ;
+    width: 10rem;
+    height: 6.5rem;
+    background-color:rgb(36, 96, 76);
+    color: rgb(244, 188, 98);
+    border-radius: 50%;
+    rotate: calc(var(--tagrotation) * -1);
+    font-weight: 600;
+    overflow: visible;
+}
+
+#tag2 {
+    top: 0;
+    position: unset;
+    transform: scale(0.6);
+}
+#tagtext2 h1 {
+    top: 18;
+    right: 5;
+    position: absolute;
+    font-size: 3rem;
+}
+
+#tagtext, #tagtext2 {rotate: var(--tagrotation);}
+
+
+#logo p {
+    font-weight: bolder;
+}
+
+#logo h1 {
+    position: absolute;
+    top: 2rem;
+    left: 3rem;
+    rotate: -20deg;
+    font-size: 5rem;
+    color: rgb(44, 101, 74);
+    -moz-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+#logo {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#logo div {
+    background-color: rgb(244, 188, 98);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 0.5rem;
+
+
+}
+
+li {
+    margin-top: 0;
+}
+
+nav {
+    margin: -2rem;
+}
+
+
+
+#schoolbar {
+    z-index: 10;
+    background-color:red;
+    width: 10rem;
+    height: 10rem;
+}
